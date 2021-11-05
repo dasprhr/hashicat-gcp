@@ -49,6 +49,7 @@ resource "google_compute_instance" "hashicat" {
   machine_type = var.machine_type
   label {
     name = "devops"
+    billable = "true"
   }
 
   boot_disk {
